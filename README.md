@@ -59,7 +59,7 @@ bagdar-site/
 const CONFIG = {
   channelUrl: "https://t.me/+4JQfovDwTO0xNmEy",   // Telegram канал
   botUrl: "https://t.me/testingbotkaz_bot",      // roadmap-бот
-  ambassadorFormUrl: "",                         // ⏳ Google Forms сілтемесі
+  ambassadorFormUrl: "https://t.me/testingbotkaz_bot?start=amb",  // бот ағыны
   partnerEmail: "raissovbeka@gmail.com",
   instagramUrl: "https://instagram.com/_raissov1",
   threadsUrl: "",                                // бос → footer-де көрсетілмейді
@@ -73,6 +73,11 @@ const CONFIG = {
 файлды сақтасаң — батырма бірден жұмыс істей бастайды.
 Ерекшелік: footer-дегі соцсеть батырмасы (Instagram, Threads) бос болса —
 солғын тұрмай, мүлдем көрсетілмейді.
+
+**Амбассадорлық өтінім** сыртқы формада емес, боттың өзінде: батырма
+`?start=amb` деп ботты ашады, бот 6 сұрақ қояды (аты, универі, курсы,
+байланысы, неге, тәжірибесі), жауап админге ✅/❌ батырмаларымен келеді.
+Коды — `~/bagdar/handlers/ambassador.py`, тесті — `tests_ambassador.py`.
 
 **Бот туралы:** `@testingbotkaz_bot` — қазір нақты қолданушылары бар жұмыс істеп
 тұрған бот. Аты Telegram-да «testing bot» болып тұр; BotFather → `/setname`

@@ -11,8 +11,9 @@ const CONFIG = {
      Ескерту: BotFather-де /setname арқылы атын «Bagdar» деп өзгертуге болады. */
   botUrl: "https://t.me/testingbotkaz_bot",
 
-  /* Амбассадорлық өтінім формасы (Google Forms / Tally) — БОС */
-  ambassadorFormUrl: "",
+  /* Амбассадорлыққа өтінім: бот ішіндегі 6 сұрақтық ағын (handlers/ambassador.py).
+     Сыртқы форма керек емес — студент Telegram-нан шықпайды. */
+  ambassadorFormUrl: "https://t.me/testingbotkaz_bot?start=amb",
 
   /* Серіктестік хат жазатын пошта */
   partnerEmail: "raissovbeka@gmail.com",
