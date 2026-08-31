@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- OG баннердің қайнар көзі. Қайта генерациялау (сайт 127.0.0.1:8777-де тұрғанда):
+     google-chrome --headless=new --disable-gpu --hide-scrollbars --window-size=1200,630 \
+       --virtual-time-budget=5000 --screenshot=og.png http://127.0.0.1:8777/og-template.html -->
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<style>
+  html,body{margin:0;padding:0;width:1200px;height:630px;overflow:hidden}
+  .og{
+    position:relative;width:1200px;height:630px;display:flex;flex-direction:column;
+    justify-content:space-between;padding:64px 72px;box-sizing:border-box;
+    font-family:"Inter",system-ui,sans-serif;color:#fff;
+    background:
+      radial-gradient(70% 90% at 100% 0%, rgba(249,231,149,.30), transparent 58%),
+      radial-gradient(60% 80% at 0% 100%, rgba(249,97,103,.34), transparent 60%),
+      #1B2447;
+  }
+  .og__chev{
+    position:absolute;inset:0;opacity:.55;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46' viewBox='0 0 46 46'%3E%3Cpath d='M11 12l11 11-11 11' fill='none' stroke='%23FFFFFF' stroke-opacity='.09' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    -webkit-mask-image:radial-gradient(75% 75% at 78% 22%, #000, transparent 72%);
+  }
+  .og__row{position:relative;display:flex;align-items:center;gap:16px}
+  .og__logo{width:56px;height:56px}
+  .og__word{font-size:34px;font-weight:800;letter-spacing:.14em}
+  .og__body{position:relative}
+  .og__title{font-size:78px;line-height:1.06;font-weight:800;letter-spacing:-.035em;max-width:19ch;margin:0}
+  .og__title .a{color:#F96167;background:linear-gradient(#F9E795,#F9E795) no-repeat 0 82%/100% .2em;padding-inline:.05em}
+  .og__sub{margin:26px 0 0;font-size:27px;color:rgba(255,255,255,.8);font-weight:500}
+  .og__pills{position:relative;display:flex;gap:14px;flex-wrap:wrap}
+  .og__pill{
+    font-size:22px;font-weight:700;padding:12px 22px;border-radius:999px;
+    background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.26);
+  }
+  .og__pill--gold{background:#F9E795;color:#1B2447;border-color:#F9E795}
+</style>
+</head>
+<body>
+<div class="og">
+  <div class="og__chev"></div>
+
+  <div class="og__row">
+    <img class="og__logo" src="favicon.svg" alt="">
+    <span class="og__word">BAGDAR</span>
+  </div>
+
+  <div class="og__body">
+    <h1 class="og__title">Университет бар.<br><span class="a">Бағдар</span> — бізден</h1>
+    <p class="og__sub">Қазақстан студенттеріне арналған дамушы орта</p>
+  </div>
+
+  <div class="og__pills">
+    <span class="og__pill og__pill--gold">🧭 Roadmap-бот</span>
+    <span class="og__pill">🎓 Универ қауымдастығы</span>
+    <span class="og__pill">🎯 Грант · тағылымдама · конкурс</span>
+  </div>
+</div>
+</body>
+</html>
