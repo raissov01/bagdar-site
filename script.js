@@ -7,17 +7,18 @@ const CONFIG = {
   /* Telegram негізгі канал (COMMUNITY.md-дегі «Bagdar 🧭») */
   channelUrl: "https://t.me/+4JQfovDwTO0xNmEy",
 
-  /* Roadmap-бот, мысалы "https://t.me/bagdar_bot" — БОС, кейін толтыр */
-  botUrl: "",
+  /* Roadmap-бот. Базада нақты қолданушылар бар — жұмыс істеп тұрған бот.
+     Ескерту: BotFather-де /setname арқылы атын «Bagdar» деп өзгертуге болады. */
+  botUrl: "https://t.me/testingbotkaz_bot",
 
   /* Амбассадорлық өтінім формасы (Google Forms / Tally) — БОС */
   ambassadorFormUrl: "",
 
-  /* Серіктестік хат жазатын пошта — БОС (мыс. "partners@bagdar.kz") */
-  partnerEmail: "",
+  /* Серіктестік хат жазатын пошта */
+  partnerEmail: "raissovbeka@gmail.com",
 
-  /* Соцсеттер */
-  instagramUrl: "",
+  /* Соцсеттер. Бос қалса — footer-дегі батырма мүлдем көрсетілмейді. */
+  instagramUrl: "https://instagram.com/_raissov1",
   threadsUrl: "",
 
   /* Сайттың канондық мекенжайы (SEO/OG үшін) */
@@ -192,6 +193,9 @@ const LANG = new URLSearchParams(location.search).get("lang") || document.docume
         }
         el.classList.remove("is-pending");
         el.removeAttribute("aria-disabled");
+      } else if (el.classList.contains("social")) {
+        /* Соцсеть әлі жоқ — батырманы footer-ден алып таста (солғын тұрғаннан жақсы) */
+        el.remove();
       } else {
         /* Сілтеме әлі жоқ — батырманы «жақында» күйіне қой */
         el.setAttribute("href", "#");

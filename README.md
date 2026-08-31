@@ -57,13 +57,13 @@ bagdar-site/
 
 ```js
 const CONFIG = {
-  channelUrl: "https://t.me/+4JQfovDwTO0xNmEy",  // Telegram канал
-  botUrl: "",             // мыс. "https://t.me/bagdar_bot"
-  ambassadorFormUrl: "",  // Google Forms / Tally сілтемесі
-  partnerEmail: "",       // мыс. "partners@bagdar.kz"
-  instagramUrl: "",
-  threadsUrl: "",
-  siteUrl: "https://bagdar.kz/",
+  channelUrl: "https://t.me/+4JQfovDwTO0xNmEy",   // Telegram канал
+  botUrl: "https://t.me/testingbotkaz_bot",      // roadmap-бот
+  ambassadorFormUrl: "",                         // ⏳ Google Forms сілтемесі
+  partnerEmail: "raissovbeka@gmail.com",
+  instagramUrl: "https://instagram.com/_raissov1",
+  threadsUrl: "",                                // бос → footer-де көрсетілмейді
+  siteUrl: "https://bagdar-rho.vercel.app/",
   pendingLabel: "жақында"
 };
 ```
@@ -71,6 +71,13 @@ const CONFIG = {
 **Бос қалдырсаң не болады:** сол сілтемеге байланған батырма автоматты түрде
 «жақында» күйіне өтеді — солғын болып, басылмайды. Сайт сынбайды. Мәнін жазып,
 файлды сақтасаң — батырма бірден жұмыс істей бастайды.
+Ерекшелік: footer-дегі соцсеть батырмасы (Instagram, Threads) бос болса —
+солғын тұрмай, мүлдем көрсетілмейді.
+
+**Бот туралы:** `@testingbotkaz_bot` — қазір нақты қолданушылары бар жұмыс істеп
+тұрған бот. Аты Telegram-да «testing bot» болып тұр; BotFather → `/setname`
+арқылы «Bagdar» деп өзгертсең, сайттағы сілтемені ауыстырудың қажеті жоқ
+(username сол күйінде қалады).
 
 Сілтемелер HTML-ге қалай байланады:
 
