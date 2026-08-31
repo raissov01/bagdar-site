@@ -3,6 +3,9 @@
 **Bagdar** — Қазақстан студенттеріне арналған дамушы орта: жеке даму roadmap-боты,
 университет қауымдастықтары және мүмкіндіктер (грант, тағылымдама, конкурс) агрегаторы.
 
+**Жанды сайт:** https://bagdar-rho.vercel.app/
+**Репозиторий:** https://github.com/raissov01/bagdar-site
+
 Бұл — жобаның таныстыру сайты. Мақсаты: студенттерді Telegram-каналға және ботқа
 бағыттау, амбассадорларды тарту, серіктестер мен грант комиссияларына жобаны таныстыру.
 
@@ -227,15 +230,19 @@ Push болған соң 1 минут ішінде сайт жаңарады.
 
 ## Мекенжай ауысқанда МІНДЕТТІ түрде
 
-`index.html` ішіндегі `<head>` блогында **8 жерде** `https://bagdar.kz/` жазылған:
+Қазіргі мекенжай: **https://bagdar-rho.vercel.app/**
+
+`index.html` ішіндегі `<head>` блогында **8 жерде** осы мекенжай жазылған:
 `canonical`, `og:url`, `og:image`, `twitter:image`, JSON-LD (`url`, `logo`, `image`).
 
 Мекенжай өзгерсе бәрін ауыстыр:
 
 ```bash
-# мысал: GitHub Pages мекенжайына көшу
-sed -i 's|https://bagdar.kz/|https://raissov01.github.io/bagdar-site/|g' index.html
-sed -i 's|https://bagdar.kz/|https://raissov01.github.io/bagdar-site/|g' robots.txt sitemap.xml
+# bagdar.kz доменін байлағанда:
+sed -i 's|https://bagdar-rho.vercel.app/|https://bagdar.kz/|g' index.html robots.txt sitemap.xml script.js
+
+# немесе GitHub Pages-ке көшкенде:
+sed -i 's|https://bagdar-rho.vercel.app/|https://raissov01.github.io/bagdar-site/|g' index.html robots.txt sitemap.xml script.js
 ```
 
 `script.js` ішіндегі `CONFIG.siteUrl` де сол мекенжай болсын.

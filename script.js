@@ -21,7 +21,7 @@ const CONFIG = {
   threadsUrl: "",
 
   /* Сайттың канондық мекенжайы (SEO/OG үшін) */
-  siteUrl: "https://bagdar.kz/",
+  siteUrl: "https://bagdar-rho.vercel.app/",
 
   /* Сілтеме әлі жоқ болса батырмада шығатын жазу */
   pendingLabel: "жақында"
