@@ -20,7 +20,7 @@ const CONFIG = {
 
   /* Соцсеттер. Бос қалса — footer-дегі батырма мүлдем көрсетілмейді. */
   instagramUrl: "https://instagram.com/_raissov1",
-  threadsUrl: "",
+  threadsUrl: "https://www.threads.com/@_raissov1",
 
   /* Сайттың канондық мекенжайы (SEO/OG үшін) */
   siteUrl: "https://bagdar-rho.vercel.app/",

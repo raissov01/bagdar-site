@@ -62,7 +62,7 @@ const CONFIG = {
   ambassadorFormUrl: "https://t.me/testingbotkaz_bot?start=amb",  // бот ағыны
   partnerEmail: "raissovbeka@gmail.com",
   instagramUrl: "https://instagram.com/_raissov1",
-  threadsUrl: "",                                // бос → footer-де көрсетілмейді
+  threadsUrl: "https://www.threads.com/@_raissov1",
   siteUrl: "https://bagdar-rho.vercel.app/",
   pendingLabel: "жақында"
 };
